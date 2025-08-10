@@ -1,0 +1,39 @@
+.title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 40px;         /* 👈 more space from top */
+  margin-bottom: 10px;      /* 👈 space from below */
+}
+
+.title-text {
+  color: #6b7280;           /* gray-500 */
+  font-size: 20px;          /* 👈 bigger text */
+  text-transform: uppercase;
+}
+
+.highlight {
+  color: #111827;           /* dark gray/black */
+  font-weight: 600;
+  margin-left: 6px;
+}
+
+.line {
+  width: 48px;
+  height: 2px;
+  background-color: #374151;
+}
+
+@media (min-width: 640px) {
+  .title-text {
+    font-size: 24px;        /* 👈 bigger on larger screen */
+  }
+
+  .line {
+    width: 60px;
+    height: 2px;
+  }
+}
+
+

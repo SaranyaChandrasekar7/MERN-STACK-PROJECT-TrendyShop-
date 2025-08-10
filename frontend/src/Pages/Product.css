@@ -1,0 +1,181 @@
+
+.product-container {
+  border-top: 2px solid #ddd;
+  padding-top: 40px;
+}
+
+.product-main {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+@media (min-width: 640px) {
+  .product-main {
+    flex-direction: row;
+  }
+}
+
+.product-images-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 12px;
+}
+
+@media (min-width: 640px) {
+  .product-images-section {
+    flex-direction: row;
+  }
+}
+
+.product-thumbnails {
+  display: flex;
+  overflow-x: auto;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .product-thumbnails {
+    flex-direction: column;
+    overflow-y: scroll;
+    width: 18.7%;
+  }
+}
+
+.thumbnail {
+  width: 24%;
+  cursor: pointer;
+}
+
+@media (min-width: 640px) {
+  .thumbnail {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+}
+
+.product-main-image {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .product-main-image {
+    width: 80%;
+  }
+}
+
+.product-main-image img {
+  width: 100%;
+  height: auto;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-info h1 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.stars img {
+  width: 14px;
+}
+
+.stars p {
+  padding-left: 8px;
+}
+
+.product-price {
+  margin-top: 20px;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.product-description {
+  margin-top: 20px;
+  color: #666;
+  max-width: 80%;
+}
+
+.product-size {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 32px 0;
+}
+
+.size-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.size-button {
+  border: 1px solid #ddd;
+  padding: 8px 16px;
+  background-color: #f3f3f3;
+  cursor: pointer;
+}
+
+.size-button.selected {
+  border-color: orange;
+}
+
+.add-to-cart-btn {
+  background-color: black;
+  color: white;
+  padding: 12px 32px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.add-to-cart-btn:active {
+  background-color: #444;
+}
+
+.product-policies {
+  font-size: 14px;
+  color: #666;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.product-details {
+  margin-top: 80px;
+}
+
+.tabs {
+  display: flex;
+}
+
+.tab {
+  border: 1px solid #ccc;
+  padding: 12px 20px;
+  font-size: 14px;
+}
+
+.tab-content {
+  border: 1px solid #ccc;
+  padding: 24px;
+  font-size: 14px;
+  color: #666;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hidden {
+  opacity: 0;
+}

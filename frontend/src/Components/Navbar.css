@@ -1,0 +1,166 @@
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+  font-weight: 500;
+  position: relative;
+}
+
+.navbar-logo {
+  color: navy;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logo {
+  color: navy;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(230, 179, 196);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+.navbar-links {
+  display: none;
+  list-style: none;
+  gap: 20px;
+}
+
+.navbar-link {
+  padding: 10px 10px;
+  transition: background-color 0.3s ease, color 0.3s ease, padding 0.3s ease;
+  color: black;
+  text-decoration: none;
+}
+
+.navbar-link:hover {
+  cursor: pointer;
+  background-color: aqua;
+  color: gray;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.icon {
+  width: 20px;
+  cursor: pointer;
+}
+
+.profile-wrapper {
+  position: relative;
+}
+
+.profile-dropdown {
+  position: absolute;
+  right: 0;
+  top: 28px;
+  background: #f0f0f0;
+  padding: 12px;
+  border-radius: 6px;
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 10;
+}
+
+.dropdown-item {
+  color: #555;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  color: #000;
+}
+
+.cart-wrapper {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  right: -5px;
+  bottom: -5px;
+  background: black;
+  color: white;
+  font-size: 8px;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  line-height: 16px;
+  border-radius: 50%;
+}
+
+.menu-icon {
+  display: block;
+}
+
+/* ✅ FIXED SIDEBAR SECTION */
+.sidebar {
+  position: fixed; /* Changed from absolute to fixed */
+  top: 0;
+  right: 0;
+  height: 100vh; /* Ensure full height */
+  width: 0;
+  background: white;
+  overflow-y: auto; /* Enable scrolling if content exceeds */
+  transition: width 0.3s ease;
+  z-index: 20;
+}
+
+.sidebar-visible {
+  width: 100%; /* Full width when visible */
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  color: #555;
+  padding-top: 60px; /* Optional spacing from top */
+}
+
+.sidebar-back {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.dropdown-icon {
+  height: 14px;
+  transform: rotate(180deg);
+}
+
+.sidebar-link {
+  padding: 12px 20px;
+  border-top: 1px solid #ddd;
+  text-decoration: none;
+  color: #444;
+  font-size: 14px;
+}
+
+/* Desktop screen */
+@media (min-width: 640px) {
+  .navbar-links {
+    display: flex;
+  }
+  .menu-icon {
+    display: none;
+  }
+}

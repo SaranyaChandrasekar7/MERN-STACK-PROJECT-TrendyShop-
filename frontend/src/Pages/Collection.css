@@ -1,0 +1,129 @@
+
+  .collection-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 40px;
+  border-top: 1px solid #ccc;
+}
+
+@media (min-width: 640px) {
+  .collection-container {
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+
+.filter-panel {
+  min-width: 240px;
+}
+
+.filter-toggle {
+  font-size: 20px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.dropdown-icon {
+  height: 14px;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-icon.rotate {
+  transform: rotate(90deg);
+}
+
+.filter-box {
+  border: 1px solid #ddd;
+  padding: 16px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  background-color: #fdfdfd;
+  animation: fadeSlide 0.4s ease;
+}
+
+.filter-title {
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  color: purple;
+  font-family: 'Segoe UI', sans-serif;
+  animation: fadeSlide 0.4s ease-in-out;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.filter-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.hide-on-mobile {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .hide-on-mobile {
+    display: block;
+  }
+}
+
+.product-panel {
+  flex: 1;
+}
+
+.collection-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.collection-header h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #111;
+  font-family: 'Segoe UI', sans-serif;
+  animation: fadeSlide 0.5s ease;
+}
+
+.sort-dropdown {
+  padding: 6px 10px;
+  font-size: 14px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

@@ -1,0 +1,39 @@
+.our-policy-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: space-around;
+  text-align: center;
+  padding: 5rem 0;
+  color: purple; /* gray-700 */
+
+}
+
+@media (min-width: 640px) {
+  .our-policy-container {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+}
+
+.policy-item {
+  max-width: 200px;
+  margin: auto;
+}
+
+.policy-icon {
+  width: 4.5rem;
+  margin: 0 auto 1.25rem auto;
+}
+
+.policy-title {
+  font-weight: 600;
+  margin-top: -1rem;
+  margin-bottom: 0.5rem;
+}
+
+.policy-desc {
+  color: #9ca3af; /* gray-400 */
+  font-size: 0.875rem;
+  color: purple;
+}
